@@ -13,7 +13,7 @@ public class LineOfSight : MonoBehaviour
 
     public bool CanBeSeen(Transform self, Transform target)
     {
-        return isInRange(self, target) && isInRange(self, target) && hasLineOfSight(self, target);
+        return isInRange(self, target) && isInAngle(self, target) && hasLineOfSight(self, target);
     }
 
     public bool CanAttack(Transform self, Transform target)
