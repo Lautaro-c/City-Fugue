@@ -246,9 +246,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 1584811571}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 60
+  attackCooldown: 1
 --- !u!114 &49081538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5073,9 +5073,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 1562474309}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 40
+  attackCooldown: 1
 --- !u!114 &523715701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7140,13 +7140,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d57f57f9587ffb4c9ba3ac59b9c569c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1091482342}
   speed: 6
   slowRadious: 5
   maxPredictionTime: 3
   maxAngleChange: 90
   rotationSpeed: 10
-  playerRb: {fileID: 0}
+  playerRb: {fileID: 1091482344}
   attackCooldown: 1
   damage: 1
   canCrash: 0
@@ -7183,9 +7183,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 1010214406}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 700346167}
   damage: 1
-  projectileForce: 40
+  attackCooldown: 1
 --- !u!114 &700346175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8457,9 +8457,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 953016652}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 40
+  attackCooldown: 1
 --- !u!114 &751723337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9215,9 +9215,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 204638798}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 60
+  attackCooldown: 1
 --- !u!114 &819370283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9339,9 +9339,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 1466026352}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 60
+  attackCooldown: 1
 --- !u!114 &820022789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10555,9 +10555,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 1411792831}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 40
+  attackCooldown: 1
 --- !u!114 &940594171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11342,9 +11342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 1889865528}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 40
+  attackCooldown: 1
 --- !u!114 &945391526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13587,9 +13587,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 1912125200}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 40
+  attackCooldown: 1
 --- !u!114 &1122223289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14405,9 +14405,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 699500893}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 40
+  attackCooldown: 1
 --- !u!114 &1141359054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17973,9 +17973,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 1137849332}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 60
+  attackCooldown: 1
 --- !u!114 &1569555404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20335,9 +20335,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 657810724}
-  projectilePool: {fileID: 2032742550}
+  lineOfSight: {fileID: 0}
   damage: 1
-  projectileForce: 40
+  attackCooldown: 1
 --- !u!114 &1741823073
 MonoBehaviour:
   m_ObjectHideFlags: 0
