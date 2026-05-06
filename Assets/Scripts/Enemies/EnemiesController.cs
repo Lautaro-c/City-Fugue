@@ -92,7 +92,7 @@ public class EnemyController : MonoBehaviour
                 break;
             case Mode.Attack:
                 dir = SteeringBehaviour.Seek(this.transform, player.position);
-                movementSpeed = enemyAttack.Attack(speed);
+                movementSpeed = 0; //enemyAttack.Attack(speed);
                 if (enemyAnimator != null)
                 {
                     enemyAnimator.PlayAttackAnamiation();

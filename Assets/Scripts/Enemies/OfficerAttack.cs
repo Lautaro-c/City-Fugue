@@ -16,6 +16,7 @@ public class OfficerAttack : EnemyAttack
     private void Start()
     {
         player = GameManager.Instance.GetPlayerTransform();
+        lineOfSight = this.GetComponent<LineOfSight>();
     }
 
     public override float Attack(float speed)
