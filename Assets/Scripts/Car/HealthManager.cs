@@ -54,7 +54,6 @@ public class HealthManager : MonoBehaviour
     private void UpdateUIInstant()
     {
         if (healthFillImage != null)
-            //Hola Lauti. El profe de optimización dice que con hacer el calculo de "health/maxHealth" está bien. No hace falta el Clamp porque lo hace solo el fillAmount.
             healthFillImage.fillAmount = Mathf.Clamp01(health / maxHealth);
     }
 

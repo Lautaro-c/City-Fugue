@@ -7,7 +7,7 @@ public class LineOfSight : MonoBehaviour
 {
     [SerializeField] private int dis;
     [SerializeField] private int fleeDis;
-    [SerializeField] private int attackDis;
+    private int attackDis = 2;
     [SerializeField] private int angle;
     [SerializeField] private LayerMask layerMask;
 

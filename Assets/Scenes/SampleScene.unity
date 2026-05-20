@@ -191,6 +191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -287,7 +292,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 70
   fleeDis: 0
-  attackDis: 50
   angle: 180
   layerMask:
     serializedVersion: 2
@@ -422,6 +426,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -492,6 +501,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -674,7 +688,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -795,7 +808,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -1196,6 +1208,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1434,6 +1451,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1504,6 +1526,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -1677,6 +1704,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1753,7 +1785,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -1984,6 +2015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2064,6 +2100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Limit (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
@@ -2224,6 +2265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2244,6 +2290,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2319,11 +2366,11 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18669213, y: 0.0070728166, z: -0.0013440319, w: 0.9823921}
-  m_LocalPosition: {x: 0, y: 0.11693609, z: -0.1828294}
-  m_LocalScale: {x: 0.009999135, y: 0.010216071, z: 0.009807746}
+  m_LocalPosition: {x: -0.92, y: 12.143109, z: 6.0170593}
+  m_LocalScale: {x: 0.99991345, y: 1.0216072, z: 0.9807746}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 409671285}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -2369,6 +2416,25 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd97e5e10fc8a9b40907268cf7b4b6fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 409671285}
+  distance: 13
+  height: 6
+  smoothSpeed: 10
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!4 &337419276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1213529687507521194, guid: 52da3529911e628498c2e16b0e5ab272,
@@ -2443,7 +2509,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -2661,7 +2726,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -2779,6 +2843,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2858,6 +2927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2934,7 +3008,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -3067,7 +3140,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -3192,6 +3264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Limit (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
@@ -3368,7 +3445,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -3502,6 +3578,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3578,7 +3659,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -3701,11 +3781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c45357a2614fb4849ab62a94cbd5a55d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 330585546}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c45357a2614fb4849ab62a94cbd5a55d,
         type: 3}
@@ -3945,8 +4021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd4ac6c31f17aa479ab51ac6a94aeec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100000
-  health: 100000
+  maxHealth: 100
+  health: 100
   healthFillImage: {fileID: 683293751}
   deathImage: {fileID: 2090319342}
   heart: {fileID: 767373006}
@@ -4228,7 +4304,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -4361,7 +4436,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -4491,6 +4565,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4573,6 +4652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (95)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -5344,7 +5428,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 20
-  attackDis: 40
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -5554,7 +5637,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -5672,6 +5754,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5742,6 +5829,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -5825,6 +5917,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Limit (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
@@ -6004,6 +6101,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -6092,6 +6194,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -6199,6 +6306,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -6275,7 +6387,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -6468,6 +6579,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -6538,6 +6654,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -7241,7 +7362,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 20
-  attackDis: 40
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -7426,7 +7546,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 70
   fleeDis: 0
-  attackDis: 50
   angle: 180
   layerMask:
     serializedVersion: 2
@@ -7520,6 +7639,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (07)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -7742,6 +7866,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -7915,7 +8044,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -8728,7 +8856,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 20
-  attackDis: 40
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -9039,6 +9166,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -9121,7 +9253,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -9255,6 +9386,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -9325,6 +9461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -9424,7 +9565,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 70
   fleeDis: 0
-  attackDis: 50
   angle: 180
   layerMask:
     serializedVersion: 2
@@ -9654,6 +9794,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -9736,6 +9881,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -9918,7 +10068,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -10043,6 +10192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Limit (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
@@ -10826,7 +10980,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 20
-  attackDis: 40
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -11613,7 +11766,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 20
-  attackDis: 40
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -11705,6 +11857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11775,6 +11932,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (91)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -11964,6 +12126,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Limit (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
@@ -12322,6 +12489,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -12640,6 +12812,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -12716,7 +12893,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -12844,6 +13020,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -12914,6 +13095,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (97)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -13685,7 +13871,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 20
-  attackDis: 40
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -14503,7 +14688,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 20
-  attackDis: 40
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -14701,6 +14885,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -14868,6 +15057,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (93)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -15060,7 +15254,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -15274,7 +15467,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -15392,6 +15584,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -15462,6 +15659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (96)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -15557,6 +15759,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Limit (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
@@ -15733,7 +15940,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -15984,6 +16190,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (90)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -16266,6 +16477,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -16336,6 +16552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -16419,6 +16640,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Limit (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
@@ -16523,6 +16749,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -16690,7 +16921,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -16808,6 +17038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -16878,6 +17113,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -16964,6 +17204,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -17034,6 +17279,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -17144,7 +17394,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -17259,6 +17508,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -17488,6 +17742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -17568,6 +17827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Limit (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
@@ -17660,6 +17924,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -17737,6 +18006,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4f70f3b4d93cf1c47bfe2f89a671025f,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4f70f3b4d93cf1c47bfe2f89a671025f,
         type: 3}
@@ -17842,7 +18116,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -18029,7 +18302,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 70
   fleeDis: 0
-  attackDis: 50
   angle: 180
   layerMask:
     serializedVersion: 2
@@ -18264,7 +18536,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -18425,6 +18696,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -18504,6 +18780,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -18577,6 +18858,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -18647,6 +18933,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -18726,7 +19017,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -18860,6 +19150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -18930,6 +19225,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -19106,7 +19406,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -19227,7 +19526,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -19345,6 +19643,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -19415,6 +19718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -19682,6 +19990,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -20453,7 +20766,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 20
-  attackDis: 40
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -20542,6 +20854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -20821,7 +21138,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -20936,6 +21252,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -21123,6 +21444,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -21346,7 +21672,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -21839,6 +22164,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -21919,6 +22249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Limit (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
@@ -22004,7 +22339,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dis: 50
   fleeDis: 0
-  attackDis: 10
   angle: 90
   layerMask:
     serializedVersion: 2
@@ -22122,6 +22456,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -22228,6 +22567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -22357,6 +22701,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -22446,6 +22795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -22516,6 +22870,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CityBlock (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
@@ -22674,6 +23033,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -22798,6 +23162,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928334166297143933, guid: 358a06a2e5d974d4e84c1b9dcd6af366,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -22881,6 +23250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989608615869584400, guid: 52da3529911e628498c2e16b0e5ab272,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -22895,6 +23269,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 195136889}
   - {fileID: 409671281}
+  - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 413557128}
