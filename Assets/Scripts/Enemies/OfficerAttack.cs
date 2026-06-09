@@ -35,7 +35,6 @@ public class OfficerAttack : EnemyAttack
         Vector3 direction = (player.position - origin).normalized;
 
         RaycastHit hit;
-
         if (Physics.Raycast(origin, direction, out hit, lineOfSightDistance()))
         {
             Debug.DrawRay(origin, direction * hit.distance, Color.red, 0.2f);
