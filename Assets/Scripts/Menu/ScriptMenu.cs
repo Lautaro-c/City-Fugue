@@ -11,10 +11,23 @@ public class ScriptMenu : MonoBehaviour
     [SerializeField] private GameObject ControllsPanel;
     [SerializeField] private GameObject CreditsPanel;
     [SerializeField] private GameObject ExitPanel;
+    [SerializeField] private GameObject SkinPanel;
 
 
     //play
     public void Play()
+    {
+        MenuPanel.SetActive(false);
+        SkinPanel.SetActive(true);
+    }
+
+    public void BackSkins()
+    {
+        SkinPanel.SetActive(false);
+        MenuPanel.SetActive(true);
+    }
+
+    public void StartGame()
     {
         SceneManager.LoadScene("SampleScene");
     }
