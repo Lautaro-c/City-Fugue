@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody))]
 public class CarController : MonoBehaviour
@@ -12,8 +13,10 @@ public class CarController : MonoBehaviour
     [SerializeField] private float DriftSteerAngle = 20f;
     [SerializeField] private float Traction = 1f;
     [SerializeField] private float Downforce = 5f; // nuevo: intensidad del downforce
-    [SerializeField] private bool UseSquaredDownforce = false; // opcional: usar v^2
     private float SteerAngle = 20f;
+    private PlayerInput playerInput;
+    private Vector2 input;
+    private bool isDrifting;
 
     // Variables
     private Vector3 MoveForce;
@@ -26,13 +29,14 @@ public class CarController : MonoBehaviour
         rb.centerOfMass = new Vector3(0f, -0.5f, 0f);
         rb.interpolation = RigidbodyInterpolation.Interpolate;
         rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+        playerInput = GetComponent<PlayerInput>();
+        isDrifting = false;
     }
 
     void FixedUpdate()
     {
-        float forwardInput = Input.GetAxis("Vertical");
-        float steerInput = Input.GetAxis("Horizontal");
-        if(Input.GetKey(KeyCode.LeftShift))
+        input = playerInput.actions["Move"].ReadValue<Vector2>();
+        if (isDrifting)
         {
             SteerAngle = DriftSteerAngle;
         }
@@ -42,7 +46,7 @@ public class CarController : MonoBehaviour
         }
 
         // 1) Acumulo la fuerza (como en tu original)
-        MoveForce += transform.forward * MoveSpeed * forwardInput * Time.fixedDeltaTime;
+        MoveForce += transform.forward * MoveSpeed * input.y * Time.fixedDeltaTime;
 
         // 2) Drag y límite sobre MoveForce
         MoveForce *= Drag;
@@ -57,20 +61,22 @@ public class CarController : MonoBehaviour
         rb.AddForce(velChange, ForceMode.VelocityChange);
 
         // 5) Steering: rotación basada en la magnitud de MoveForce
-        float yaw = steerInput * MoveForce.magnitude * SteerAngle * Time.fixedDeltaTime;
+        float yaw = input.x * MoveForce.magnitude * SteerAngle * Time.fixedDeltaTime;
         Quaternion deltaRot = Quaternion.Euler(0f, yaw, 0f);
         rb.MoveRotation(rb.rotation * deltaRot);
-
-        // 6) Downforce para mantener el coche pegado al suelo
-        //    - UseSquaredDownforce = false -> proporcional a v
-        //    - UseSquaredDownforce = true  -> proporcional a v^2 (más realista a altas velocidades)
-        float speed = rb.velocity.magnitude;
-        float dfFactor = UseSquaredDownforce ? speed * speed : speed;
         // ForceMode.Acceleration hace que el efecto no dependa de la masa
-        rb.AddForce(-transform.up * dfFactor * Downforce, ForceMode.Acceleration);
+        rb.AddForce(-transform.up * Downforce, ForceMode.Acceleration);
+    }
 
-        // Debug
-        Debug.DrawRay(transform.position, MoveForce.normalized * 3f, Color.red);
-        Debug.DrawRay(transform.position, transform.forward * 3f, Color.blue);
+    public void Break(InputAction.CallbackContext callbackContext)
+    {
+        if(callbackContext.performed)
+        {
+            isDrifting = true;
+        }
+        else if(callbackContext.canceled)
+        {
+            isDrifting = false;
+        }
     }
 }
