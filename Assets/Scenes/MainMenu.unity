@@ -466,6 +466,10 @@ MonoBehaviour:
   - Default
   - Skin 1
   - Skin 2
+  materialAddress:
+  - Color_Blue
+  - Color_Orange
+  - Color_Red
   skinPreview: {fileID: 163458778}
   skinNameText: {fileID: 550190894}
 --- !u!1 &154872768
