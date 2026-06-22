@@ -105,7 +105,7 @@
                 {
                     "name": "",
                     "id": "999e6064-22d2-482e-90df-5c9af43dd42c",
-                    "path": "<DualShockGamepad>/leftStick",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
