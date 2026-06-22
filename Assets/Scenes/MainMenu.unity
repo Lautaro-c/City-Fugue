@@ -459,9 +459,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skins:
-  - {fileID: 21300000, guid: 6d31bbf8e25b5354ba0022d4b3ef8cad, type: 3}
-  - {fileID: 21300000, guid: 6f493eb0de9095c43a4a3b0b812e2fa4, type: 3}
-  - {fileID: 21300000, guid: 4df29ce3840acba4fab87998b9128393, type: 3}
+  - {fileID: 21300000, guid: 87e94388a2972f946bdbe695eeb7c654, type: 3}
+  - {fileID: 21300000, guid: 64e60b9aed01daa4392f56a10d801ec1, type: 3}
+  - {fileID: 21300000, guid: 018f27aa81a2377408089cff1689a2bf, type: 3}
   skinNames:
   - Default
   - Skin 1
@@ -4419,7 +4419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 52f692e326a3f94438a0fe310dea77f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da9c9ac342e2c2b4a88d8c4fdab697a3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
