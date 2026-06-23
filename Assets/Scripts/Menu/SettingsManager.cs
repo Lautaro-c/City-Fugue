@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class SettingsManager : MonoBehaviour
 {
-   
-
     public static SettingsManager Instance;
+    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -17,11 +16,12 @@ public class SettingsManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void SetMasterVolume(float volume)
     {
-        AudioListener.volume = volume;
+        audioSource.volume = volume;
     }
 
 
