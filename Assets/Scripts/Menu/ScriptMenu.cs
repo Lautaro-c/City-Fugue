@@ -13,6 +13,11 @@ public class ScriptMenu : MonoBehaviour
 
 
     //play
+
+    void Start()
+    {
+        Application.targetFrameRate = 100;
+    }
     public void Play()
     {
         MenuPanel.SetActive(false);
