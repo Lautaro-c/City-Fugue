@@ -13,10 +13,19 @@ public class ScriptMenu : MonoBehaviour
 
 
     //play
+    void Awake()
+    {
+        int anchoObjetivo = 1612;
+        int altoObjetivo = 720;
 
+        if (Screen.currentResolution.width >= anchoObjetivo)
+        {
+            Screen.SetResolution(anchoObjetivo, altoObjetivo, true);
+        }
+    }
     void Start()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 120;
     }
     public void Play()
     {
