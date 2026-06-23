@@ -25,7 +25,6 @@ public class Clock : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
         if (currentTime <= 0f) currentTime = maxTime;
         UpdateUIInstant();
         if (deathImage != null) deathImage.SetActive(false);

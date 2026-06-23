@@ -30,7 +30,6 @@ public class HealthManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
         if (health <= 0f) health = maxHealth;
         UpdateUIInstant();
         if (deathImage != null) deathImage.SetActive(false);
