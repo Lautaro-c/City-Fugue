@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,10 @@ public class Clock : MonoBehaviour
 
     [Header("Death")]
     [SerializeField] private GameObject deathImage;
+
+    [SerializeField] private TextMeshProUGUI fpsText;
+    private float timer;
+    private int frameCount;
 
     private bool IsDead = false;
 
@@ -34,6 +39,21 @@ public class Clock : MonoBehaviour
     private void Update()
     {
         CountTime();
+        frameCount++;
+        timer += Time.unscaledDeltaTime;
+        if (timer >= 0.5f)
+
+        {
+
+            float fps = frameCount / timer;
+
+            fpsText.SetText("{0:0} FPS", fps);
+
+            frameCount = 0;
+
+            timer = 0f;
+
+        }
     }
 
     public void CountTime()
