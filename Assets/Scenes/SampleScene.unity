@@ -2767,7 +2767,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &452112273
 MonoBehaviour:
@@ -2813,7 +2812,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &452112275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4155,7 +4154,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &732303009
 MonoBehaviour:
@@ -4201,7 +4199,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &732303011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4393,7 +4391,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &764201735
 MonoBehaviour:
@@ -4439,7 +4436,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &764201737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4967,7 +4964,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &787241119
 MonoBehaviour:
@@ -5013,7 +5009,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &787241121
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5865,7 +5861,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &938167133
 MonoBehaviour:
@@ -5911,7 +5906,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &938167135
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6675,7 +6670,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &1040472768
 MonoBehaviour:
@@ -6721,7 +6715,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &1040472770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7810,7 +7804,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &1135634329
 MonoBehaviour:
@@ -7856,7 +7849,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &1135634331
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8157,7 +8150,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &1145592971
 MonoBehaviour:
@@ -8203,7 +8195,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &1145592973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8904,7 +8896,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &1271465297
 MonoBehaviour:
@@ -8950,7 +8941,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &1271465299
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9570,7 +9561,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &1427450217
 MonoBehaviour:
@@ -9616,7 +9606,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &1427450219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9922,7 +9912,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &1484342165
 MonoBehaviour:
@@ -9968,7 +9957,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &1484342167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10157,7 +10146,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &1547755921
 MonoBehaviour:
@@ -10203,7 +10191,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &1547755923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11813,7 +11801,6 @@ MonoBehaviour:
   attackCooldown: 0.5
   damage: 10
   canCrash: 1
-  enemyAnimator: {fileID: 0}
   wanderChangeInterval: 1.5
 --- !u!114 &1820616080
 MonoBehaviour:
@@ -11859,7 +11846,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &1820616082
 BoxCollider:
   m_ObjectHideFlags: 0

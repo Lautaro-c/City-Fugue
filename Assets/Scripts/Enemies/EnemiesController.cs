@@ -14,7 +14,6 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float attackCooldown;
     [SerializeField] private float damage;
     [SerializeField] private bool canCrash;
-    [SerializeField] private EnemyAnimator enemyAnimator;
     [SerializeField] private float wanderChangeInterval = 1.5f;
 
     private DecisionTree decisionTree;
@@ -75,7 +74,6 @@ public class EnemyController : MonoBehaviour
             case Mode.Pursue:
                 dir = SteeringBehaviour.Pursue(transform, player, playerRb, maxPredictionTime, slowRadious);
                 movementSpeed = speed;
-                if (enemyAnimator != null) enemyAnimator.PlayRunningAnamiation();
                 break;
             case Mode.Wander:
                 wanderTimer -= Time.fixedDeltaTime;
@@ -86,12 +84,10 @@ public class EnemyController : MonoBehaviour
                 }
                 dir = wanderDirection;
                 movementSpeed = speed * 0.5f;
-                if (enemyAnimator != null) enemyAnimator.PlayWalkingAnamiation();
                 break;
             case Mode.Attack:
                 dir = SteeringBehaviour.Seek(transform, player.position);
                 movementSpeed = 0f;
-                if (enemyAnimator != null) enemyAnimator.PlayAttackAnamiation();
                 if (!canCrash)
                 {
                     mode = Mode.AfterAttack;
@@ -101,7 +97,6 @@ public class EnemyController : MonoBehaviour
             case Mode.Flee:
                 dir = SteeringBehaviour.Flee(transform, player.position);
                 movementSpeed = speed * 2f;
-                if (enemyAnimator != null) enemyAnimator.PlayRunningAnamiation();
                 break;
             case Mode.Dead:
             case Mode.AfterAttack:
@@ -129,7 +124,6 @@ public class EnemyController : MonoBehaviour
         mode = Mode.Dead;
         isDead = true;
         enemyRb.velocity = Vector3.zero;
-        if (enemyAnimator != null) enemyAnimator.PlayDeathAnamiation();
     }
 
     private void OnCollisionEnter(Collision collision)

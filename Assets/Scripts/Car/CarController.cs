@@ -26,7 +26,6 @@ public class CarController : MonoBehaviour
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         rb.centerOfMass = new Vector3(0f, -0.5f, 0f);
         rb.interpolation = RigidbodyInterpolation.Interpolate;
-        rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         playerInput = GetComponent<PlayerInput>();
         isDrifting = false;
     }
