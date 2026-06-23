@@ -1,23 +1,39 @@
 using TMPro;
+
 using UnityEngine;
-
+ 
 public class FPSShower : MonoBehaviour
+
 {
+
     [SerializeField] private TextMeshProUGUI fpsText;
-    private float deltaTime = 0.0f;
-    private float updateInterval = 0.5f;
-    private float nextUpdateTime = 0.0f;
 
-    void Update()
+    private float timer;
+
+    private int frameCount;
+
+    private void Update()
+
     {
-        deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
 
-        if (Time.unscaledTime >= nextUpdateTime)
+        frameCount++;
+
+        timer += Time.unscaledDeltaTime;
+
+        if (timer >= 0.5f)
+
         {
-            nextUpdateTime = Time.unscaledTime + updateInterval;
-            float fps = 1.0f / deltaTime;
+
+            float fps = frameCount / timer;
 
             fpsText.SetText("{0:0} FPS", fps);
+
+            frameCount = 0;
+
+            timer = 0f;
+
         }
+
     }
+
 }
