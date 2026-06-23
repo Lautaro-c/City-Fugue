@@ -4,7 +4,7 @@ public class OfficerAttack : EnemyAttack
 {
     [Header("References")]
     [SerializeField] private Transform spawnPos;
-    [SerializeField] private LineOfSight lineOfSight;
+    private LineOfSight lineOfSight;
 
     [Header("Stats")]
     [SerializeField] private float damage = 10f;
@@ -16,16 +16,14 @@ public class OfficerAttack : EnemyAttack
     private void Start()
     {
         player = GameManager.Instance.GetPlayerTransform();
-        lineOfSight = this.GetComponent<LineOfSight>();
+        lineOfSight = GetComponent<LineOfSight>();
     }
 
     public override float Attack(float speed)
     {
-        // ⏱️ Cooldown
         if (Time.time < lastAttackTime + attackCooldown)
             return 0f;
 
-        // 👁️ Chequeo LOS completo (visión + rango + sin obstáculos)
         if (!lineOfSight.CanAttack(transform, player))
             return 0f;
 
@@ -34,8 +32,10 @@ public class OfficerAttack : EnemyAttack
         Vector3 origin = spawnPos.position;
         Vector3 direction = (player.position - origin).normalized;
 
+        float rayDistance = (transform.position - player.position).magnitude;
+
         RaycastHit hit;
-        if (Physics.Raycast(origin, direction, out hit, lineOfSightDistance()))
+        if (Physics.Raycast(origin, direction, out hit, rayDistance))
         {
             Debug.DrawRay(origin, direction * hit.distance, Color.red, 0.2f);
 
@@ -46,11 +46,5 @@ public class OfficerAttack : EnemyAttack
         }
 
         return 0f;
-    }
-
-    // 🔧 Usamos el attackDis del LOS como rango del disparo
-    private float lineOfSightDistance()
-    {
-        return Vector3.Distance(transform.position, player.position);
     }
 }

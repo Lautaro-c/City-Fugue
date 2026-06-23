@@ -16,13 +16,16 @@ public class FinishLine : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             timeSpend = Time.timeSinceLevelLoad;
-            timeText.text = timeSpend.ToString("F2") + "s";
+            timeText.SetText("{0:F2}s", timeSpend);
+
             health = HealthManager.Instance.GetHealth();
-            healthText.text = health.ToString() + "/" + HealthManager.Instance.GetMaxHealth().ToString();
+            float maxHealth = HealthManager.Instance.GetMaxHealth();
+            healthText.SetText("{0}/{1}", health, maxHealth);
+
             score = (Mathf.Max(0, (int)(1000 - timeSpend * 10)) + 1) * ((int)(health * 10) + 1);
-            pointsText.text = score.ToString();
+            pointsText.SetText("{0}", score);
+
             VictoryImage.SetActive(true);
         }
     }
 }
-

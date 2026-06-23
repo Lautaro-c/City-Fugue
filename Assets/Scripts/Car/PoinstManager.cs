@@ -10,7 +10,6 @@ public class PoinstManager : MonoBehaviour
     [SerializeField] private GameObject chainSaw3;
     [SerializeField] private GameObject wreckingBall;
 
-
     public void GainPoints()
     {
         points += 10;
@@ -19,7 +18,8 @@ public class PoinstManager : MonoBehaviour
             givePowerUp();
             points -= 100;
         }
-        pointsText.text = "Points: " + points.ToString();
+
+        pointsText.SetText("Points: {0}", points);
     }
 
     private void givePowerUp()

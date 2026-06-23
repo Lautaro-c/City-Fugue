@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyAnimator : MonoBehaviour
@@ -5,42 +6,47 @@ public class EnemyAnimator : MonoBehaviour
     [SerializeField] private float deathTime = 1f;
     private Animator animator;
 
+    // Hasheamos los parámetros del Animator (es mucho más rápido que usar strings en cada frame)
+    private static readonly int IsDeadHash = Animator.StringToHash("IsDead");
+    private static readonly int IsWalkingHash = Animator.StringToHash("IsWalking");
+    private static readonly int IsShootingHash = Animator.StringToHash("IsShooting");
+    private static readonly int IsRunningHash = Animator.StringToHash("IsRunning");
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        CancelInvoke("Destroy");
     }
 
     public void PlayDeathAnamiation()
     {
-        animator.SetBool("IsDead", true);
-        Invoke("Destroy", deathTime);
+        animator.SetBool(IsDeadHash, true);
+        StartCoroutine(DestroyAfterDelay());
     }
 
     public void PlayWalkingAnamiation()
     {
-        animator.SetBool("IsWalking", true);
-        animator.SetBool("IsShooting", false);
-        animator.SetBool("IsRunning", false);
+        animator.SetBool(IsWalkingHash, true);
+        animator.SetBool(IsShootingHash, false);
+        animator.SetBool(IsRunningHash, false);
     }
 
     public void PlayRunningAnamiation()
     {
-        animator.SetBool("IsWalking", false);
-        animator.SetBool("IsShooting", false);
-        animator.SetBool("IsRunning", true);
+        animator.SetBool(IsWalkingHash, false);
+        animator.SetBool(IsShootingHash, false);
+        animator.SetBool(IsRunningHash, true);
     }
 
     public void PlayAttackAnamiation()
     {
-        animator.SetBool("IsWalking", false);
-        animator.SetBool("IsShooting", true);
-        animator.SetBool("IsRunning", false);
+        animator.SetBool(IsWalkingHash, false);
+        animator.SetBool(IsShootingHash, true);
+        animator.SetBool(IsRunningHash, false);
     }
 
-    private void Destroy()
+    private IEnumerator DestroyAfterDelay()
     {
-        Destroy(this.gameObject);
+        yield return new WaitForSeconds(deathTime);
+        Destroy(gameObject);
     }
 }

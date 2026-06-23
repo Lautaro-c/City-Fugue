@@ -2,31 +2,25 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public enum Mode
-    {
-        Pursue,
-        Wander,
-        Attack,
-        AfterAttack,
-        Flee,
-        Dead
-    }
+    public enum Mode { Pursue, Wander, Attack, AfterAttack, Flee, Dead }
+
     [SerializeField] private Transform player;
-    [SerializeField] private float speed;
+    [SerializeField] private float speed = 5f;
     [SerializeField] private float slowRadious = 5f;
-    [SerializeField] private float maxPredictionTime = 10;
+    [SerializeField] private float maxPredictionTime = 10f;
     [SerializeField] private float maxAngleChange = 90f;
-    [SerializeField] private int rotationSpeed = 50;
+    [SerializeField] private float rotationSpeed = 50f;
     [SerializeField] private Rigidbody playerRb;
     [SerializeField] private float attackCooldown;
     [SerializeField] private float damage;
     [SerializeField] private bool canCrash;
     [SerializeField] private EnemyAnimator enemyAnimator;
+    [SerializeField] private float wanderChangeInterval = 1.5f;
+
     private DecisionTree decisionTree;
     private float timeSinceLastAttack;
     private Mode mode;
     private Rigidbody enemyRb;
-    [SerializeField] private float wanderChangeInterval = 1.5f;
     private DecisionNode tree;
     private EnemyContext context;
     private LineOfSight los;
@@ -34,6 +28,7 @@ public class EnemyController : MonoBehaviour
     private float wanderTimer;
     private EnemyAttack enemyAttack;
     private bool isDead;
+
     private void Awake()
     {
         isDead = false;
@@ -42,6 +37,9 @@ public class EnemyController : MonoBehaviour
         los = GetComponent<LineOfSight>();
         decisionTree = GetComponent<DecisionTree>();
         wanderTimer = 0f;
+
+        // Inicializamos el contexto una sola vez para evitar Garbage Collector
+        context = new EnemyContext { self = transform };
     }
 
     private void Start()
@@ -50,7 +48,11 @@ public class EnemyController : MonoBehaviour
         player = GameManager.Instance.GetPlayerTransform();
         playerRb = GameManager.Instance.GetPlayerRB();
         enemyAttack = GetComponent<EnemyAttack>();
-        context = new EnemyContext { self = transform, player = player, los = los };
+
+        // Actualizamos las referencias fijas del contexto
+        context.player = player;
+        context.los = los;
+
         timeSinceLastAttack = attackCooldown;
     }
 
@@ -59,101 +61,86 @@ public class EnemyController : MonoBehaviour
         if (timeSinceLastAttack >= attackCooldown && !isDead)
         {
             tree.Evaluate(this, context);
-        }else
-        {
-            timeSinceLastAttack += Time.deltaTime;
         }
+        else
+        {
+            timeSinceLastAttack += Time.fixedDeltaTime; // Corregido a fixedDeltaTime por estar en FixedUpdate
+        }
+
         Vector3 dir = Vector3.zero;
-        float movementSpeed = 0;
+        float movementSpeed = 0f;
+
         switch (mode)
         {
             case Mode.Pursue:
-                dir = SteeringBehaviour.Pursue(this.transform, player, playerRb, maxPredictionTime, slowRadious);
+                dir = SteeringBehaviour.Pursue(transform, player, playerRb, maxPredictionTime, slowRadious);
                 movementSpeed = speed;
-                if(enemyAnimator != null)
-                {
-                    enemyAnimator.PlayRunningAnamiation();
-                }
+                if (enemyAnimator != null) enemyAnimator.PlayRunningAnamiation();
                 break;
             case Mode.Wander:
-                wanderTimer -= Time.deltaTime;
+                wanderTimer -= Time.fixedDeltaTime;
                 if (wanderTimer <= 0f)
                 {
                     wanderDirection = SteeringBehaviour.Wander(wanderDirection, maxAngleChange);
                     wanderTimer = wanderChangeInterval;
                 }
                 dir = wanderDirection;
-                movementSpeed = speed / 2;
-                if (enemyAnimator != null)
-                {
-                    enemyAnimator.PlayWalkingAnamiation();
-                }
+                movementSpeed = speed * 0.5f;
+                if (enemyAnimator != null) enemyAnimator.PlayWalkingAnamiation();
                 break;
             case Mode.Attack:
-                dir = SteeringBehaviour.Seek(this.transform, player.position);
-                movementSpeed = 0; //enemyAttack.Attack(speed);
-                if (enemyAnimator != null)
-                {
-                    enemyAnimator.PlayAttackAnamiation();
-                }
+                dir = SteeringBehaviour.Seek(transform, player.position);
+                movementSpeed = 0f;
+                if (enemyAnimator != null) enemyAnimator.PlayAttackAnamiation();
                 if (!canCrash)
                 {
-                    this.mode = Mode.AfterAttack;
-                    timeSinceLastAttack = 0;
+                    mode = Mode.AfterAttack;
+                    timeSinceLastAttack = 0f;
                 }
-                break;
-            case Mode.AfterAttack:
                 break;
             case Mode.Flee:
-                dir = SteeringBehaviour.Flee(this.transform, player.position);
-                movementSpeed = speed * 2;
-                if (enemyAnimator != null)
-                {
-                    enemyAnimator.PlayRunningAnamiation();
-                }
+                dir = SteeringBehaviour.Flee(transform, player.position);
+                movementSpeed = speed * 2f;
+                if (enemyAnimator != null) enemyAnimator.PlayRunningAnamiation();
                 break;
             case Mode.Dead:
-                movementSpeed = 0;
+            case Mode.AfterAttack:
+                movementSpeed = 0f;
                 break;
         }
         Move(dir, movementSpeed);
     }
+
     private void Move(Vector3 dir, float movementSpeed)
     {
         enemyRb.velocity = dir * movementSpeed;
         if (dir != Vector3.zero)
         {
             float angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
-            Quaternion targetRotation = Quaternion.Euler(0, angle, 0);
-            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed);
+            Quaternion targetRotation = Quaternion.Euler(0f, angle, 0f);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
         }
     }
 
-    public void SetMode(Mode mode)
-    {
-        this.mode = mode;
-    }
+    public void SetMode(Mode mode) => this.mode = mode;
 
     private void OnDeath()
     {
         mode = Mode.Dead;
         isDead = true;
         enemyRb.velocity = Vector3.zero;
-        if (enemyAnimator != null)
-        {
-            enemyAnimator.PlayDeathAnamiation();
-        }
+        if (enemyAnimator != null) enemyAnimator.PlayDeathAnamiation();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            if(canCrash)
+            if (canCrash)
             {
-                timeSinceLastAttack = 0;
+                timeSinceLastAttack = 0f;
                 HealthManager.Instance.ReceiveDamage(damage);
-                this.mode = Mode.AfterAttack;
+                mode = Mode.AfterAttack;
             }
             else
             {

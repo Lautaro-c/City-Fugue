@@ -16,7 +16,7 @@ public class ScriptMenu : MonoBehaviour
 
     void Start()
     {
-        Application.targetFrameRate = 100;
+        Application.targetFrameRate = 60;
     }
     public void Play()
     {
