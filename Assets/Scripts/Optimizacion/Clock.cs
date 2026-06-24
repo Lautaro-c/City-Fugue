@@ -84,7 +84,7 @@ public class Clock : MonoBehaviour
     {
         IsDead = true;
         if (deathImage != null) deathImage.enabled = true;
-        carController.ImDead();
+        carController.ImDead(false);
     }
 
     public void SelfDestroy()

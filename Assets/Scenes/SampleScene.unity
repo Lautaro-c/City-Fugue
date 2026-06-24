@@ -4511,6 +4511,7 @@ MonoBehaviour:
   image: {fileID: 1184604217}
   canvas: {fileID: 800764022}
   clock: {fileID: 1854734724}
+  carController: {fileID: 409671283}
 --- !u!1001 &545449104
 PrefabInstance:
   m_ObjectHideFlags: 0

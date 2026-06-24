@@ -9,6 +9,7 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private Image image;
     [SerializeField] private Canvas canvas;
     [SerializeField] private Clock clock;
+    [SerializeField] private CarController carController;
     private int currentIndex = 0;
 
     void Start()
@@ -17,6 +18,7 @@ public class TutorialManager : MonoBehaviour
         {
             image.sprite = sprites[currentIndex];
         }
+        carController.ImDead(false);
     }
 
     public void NextImage()
@@ -29,6 +31,7 @@ public class TutorialManager : MonoBehaviour
         else
         {
             clock.NowYouCanCount();
+            carController.ImDead(true);
             canvas.enabled = false;
         }
     }

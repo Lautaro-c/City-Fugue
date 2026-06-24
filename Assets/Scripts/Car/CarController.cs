@@ -86,8 +86,8 @@ public class CarController : MonoBehaviour
         }
     }
 
-    public void ImDead()
+    public void ImDead(bool state)
     {
-        canMove = false;
+        canMove = state;
     }
 }
