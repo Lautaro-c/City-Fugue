@@ -24,5 +24,10 @@ public class SettingsManager : MonoBehaviour
         audioSource.volume = volume;
     }
 
+    public float GetMasterVolume()
+    {
+        return audioSource.volume;
+    }
+
 
 }

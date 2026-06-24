@@ -14,12 +14,14 @@ public class Clock : MonoBehaviour
     [SerializeField] private Image timeFillImage;
 
     [Header("Death")]
-    [SerializeField] private GameObject deathImage;
+    [SerializeField] private Canvas deathImage;
 
     [SerializeField] private TextMeshProUGUI fpsText;
+    [SerializeField] private CarController carController;
     private float timer;
     private int frameCount;
 
+    private bool canStart = false;
     private bool IsDead = false;
 
     private void Awake()
@@ -32,17 +34,20 @@ public class Clock : MonoBehaviour
         Instance = this;
         if (currentTime <= 0f) currentTime = maxTime;
         UpdateUIInstant();
-        if (deathImage != null) deathImage.SetActive(false);
+        if (deathImage != null) deathImage.enabled = false;
         IsDead = false;
+        canStart = false;
     }
 
     private void Update()
     {
-        CountTime();
+        if (canStart)
+        {
+            CountTime();
+        }
         frameCount++;
         timer += Time.unscaledDeltaTime;
         if (timer >= 0.5f)
-
         {
 
             float fps = frameCount / timer;
@@ -78,6 +83,17 @@ public class Clock : MonoBehaviour
     private void OnDeath()
     {
         IsDead = true;
-        if (deathImage != null) deathImage.SetActive(true);
+        if (deathImage != null) deathImage.enabled = true;
+        carController.ImDead();
+    }
+
+    public void SelfDestroy()
+    {
+        this.gameObject.SetActive(false);
+    }
+
+    public void NowYouCanCount()
+    {
+        canStart = true;
     }
 }

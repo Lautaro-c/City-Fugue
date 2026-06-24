@@ -3,10 +3,12 @@ using UnityEngine;
 
 public class FinishLine : MonoBehaviour
 {
-    [SerializeField] private GameObject VictoryImage;
+    [SerializeField] private Canvas VictoryImage;
     [SerializeField] private TextMeshProUGUI timeText;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI pointsText;
+    [SerializeField] private TextMeshProUGUI finalPointsText;
+    [SerializeField] private Clock clock;
     private float timeSpend;
     private int score = 0;
     private int points = 0;
@@ -16,11 +18,12 @@ public class FinishLine : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             timeSpend = Time.timeSinceLevelLoad;
-            timeText.SetText("{0}s", timeSpend);
+            timeText.SetText($"{timeSpend:F2}s");
+            finalPointsText.SetText("{0}", points);
             score = (Mathf.Max(0, (int)(100 - timeSpend)) + 1) * ((int)(points * 10) + 1);
             scoreText.SetText("{0}", score);
-
-            VictoryImage.SetActive(true);
+            clock.SelfDestroy();
+            VictoryImage.enabled = true;
         }
     }
 
