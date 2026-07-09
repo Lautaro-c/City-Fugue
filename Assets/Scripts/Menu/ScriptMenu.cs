@@ -10,12 +10,9 @@ public class ScriptMenu : MonoBehaviour
     [SerializeField] private GameObject CreditsPanel;
     [SerializeField] private GameObject ExitPanel;
     [SerializeField] private GameObject SkinPanel;
-
-
-    //play
     void Awake()
     {
-        int anchoObjetivo = 1612;
+        int anchoObjetivo = 1334;
         int altoObjetivo = 720;
 
         if (Screen.currentResolution.width >= anchoObjetivo)
@@ -43,11 +40,6 @@ public class ScriptMenu : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
-    //---------------------------------------------------
-
-    //Options
-    //---------------------------------------------------
-
     public void Options()
     {
         OptionsPanel.SetActive(true);
@@ -94,12 +86,6 @@ public class ScriptMenu : MonoBehaviour
         MenuPanel.SetActive(true);
         OptionsPanel.SetActive(false);
     }
-
-    //---------------------------------------------------
-
-
-    //Credits
-    //---------------------------------------------------
     public void credits()
     {
         MenuPanel.SetActive(false);
@@ -112,10 +98,6 @@ public class ScriptMenu : MonoBehaviour
         MenuPanel.SetActive(true);
         CreditsPanel.SetActive(false);
     }
-    //---------------------------------------------------
-
-    //exit
-    //---------------------------------------------------
     public void Exit()
     {
         MenuPanel.SetActive(false);
@@ -132,7 +114,4 @@ public class ScriptMenu : MonoBehaviour
         MenuPanel.SetActive(true);
         ExitPanel.SetActive(false);
     }
-    //---------------------------------------------------
-
-
 }
