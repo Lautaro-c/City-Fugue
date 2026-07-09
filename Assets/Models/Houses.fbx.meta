@@ -1,15 +1,9 @@
 fileFormatVersion: 2
-guid: 1bc50c2e26da0394db5d285de5757b34
+guid: 059035c5c2315c344b02cde2797d9158
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CityMap
-    second: {fileID: -876546973899608171, guid: 6f15622cdf322da428afbb7d5c164c9c,
-      type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

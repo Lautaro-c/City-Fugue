@@ -17,18 +17,18 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 487883259c4e8814a91c8d9a37995d27
   m_SerializeEntries:
-  - m_GUID: 193ff7a5a9d20d84fa930c6253060983
+  - m_GUID: b0d92c48ad64b7941a29a6014e89fee5
+    m_Address: Assets/Models/Materials/PlayerCar_Blue.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e2ceb52f8785d44584f89d155f1c633
+    m_Address: Assets/Models/Materials/PlayerCar_Red.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 859ca67860cb1c34bad131a71d64c011
     m_Address: Color_Orange
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: eff6dd67e0ce2ab44a8c77bbd6551cc8
-    m_Address: Color_Blue
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ffbe16d49f15e3f469f9fd64511428b9
-    m_Address: Color_Red
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
