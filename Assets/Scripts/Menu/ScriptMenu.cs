@@ -22,7 +22,7 @@ public class ScriptMenu : MonoBehaviour
     }
     void Start()
     {
-        Application.targetFrameRate = 120;
+        Application.targetFrameRate = 63;
     }
     public void Play()
     {
